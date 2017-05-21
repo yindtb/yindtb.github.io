@@ -8,9 +8,9 @@ $(document).ready(function(){
 	width = canvas.width;
 	height = canvas.height;
 	context = canvas.getContext("2d");
-	nStars = 800;
-	starRadiusLower = 1;
-	starRadiusUpper = 3;
+	nStars = ~~(width * height * .002);
+	starRadiusLower = height * .001;
+	starRadiusUpper = height * .003;
 	stars = [];
 	for (var i=0; i<nStars; i++) {
 		singleStar = {};
