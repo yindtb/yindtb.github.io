@@ -8,8 +8,8 @@ $(document).ready(function(){
 	width = canvas.width;
 	height = canvas.height;
 	context = canvas.getContext("2d");
-	nStars = ~~(width * height * .002);
-	starRadiusLower = height * .001;
+	nStars = ~~(width * height * .0015);
+	starRadiusLower = height * .002;
 	starRadiusUpper = height * .003;
 	stars = [];
 	for (var i=0; i<nStars; i++) {
@@ -20,7 +20,7 @@ $(document).ready(function(){
 		stars.push(singleStar);
 	}
 
-	setInterval(intervalHandler, 500);
+	setInterval(intervalHandler, 300);
 	}
 );
 
